@@ -17,7 +17,7 @@ This is a REST API for fetching the user details from database using Django Rest
 - Install Python
 - Install Django using pip install django 
 - Install Django Rest Framework using pip install djangorestframework
-- Git clone the project with ``` git clone https://github.com/Laxmika1401/TVA_task.git```
+- Git clone the project with ``` git clone https://github.com/Laxmika1401/RESTAPI_task.git```
 - Create your virtualenv with `Pipenv` or `virtualenv` and activate it.
 - Create you database with `python manage.py runserver` 
 - Finally run the API 
