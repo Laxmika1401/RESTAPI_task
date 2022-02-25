@@ -21,4 +21,4 @@ This is a REST API for fetching the user details from database using Django Rest
 - Create your virtualenv with `Pipenv` or `virtualenv` and activate it.
 - Create you database with `python manage.py runserver` 
 - Finally run the API 
-``` python manage.py runserver ``
+``` python manage.py runserver ```
