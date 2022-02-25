@@ -1,16 +1,13 @@
-# TVA_task
+## TVA_task
 This is a REST API for fetching the user details from database using Django Rest Framework. 
-METHOD	ROUTE	FUNCTIONALITY	ACCESS
-POST	/auth/signup/	Register new user	All users
-POST	/auth/jwt/create/	Login user	All users
-POST	/auth/jwt/refresh/	Refresh the access token	All users
-POST	/auth/jwt/verify/	Verify the validity of a token	All users
-POST	/orders/	Place an order	All users
-POST	/orders/	Get all orders	All users
-GET	/order/{order_id}/	Retrieve an order	Superuser
-PUT	/orders/{order_id}/	Update an order	All users
-PUT	/update-status/{order_id}/	Update order status	Superuser
-DELETE	/delete/{order_id}/	Delete/Remove an order	All users
-GET	/user/{user_id}/orders/	Get user's orders	All users
-GET	/user/{user_id}/order/{order_id}/	Get user's specific order	
-GET	/docs/	View API documentation	All users
+
+## Routes To Implement
+
+| METHOD | ROUTE | FUNCTIONALITY |DATA|
+| ------- | ----- | ------------- | ------------- |
+| *GET* | ```/api/users/``` | _Get all user_| _All users_|
+| *GET* | ```/api/users?page=1?limit=10?name=ame?sort=-age``` | _Get user according to the requirenment_|_Selected users_|
+| *POST* | ```/api/users/``` | _create new user_|_create new users_|
+| *GET* | ```/api/users/{id}``` | _Retrieve an user_|_Selected user_|
+| *PUT* | ```/api/users/{id}``` | _Update an user_|_selected users_|
+| *DELETE* | ```/api/users{id}``` | _Delete/Remove an user_ |_selected users_|
