@@ -6,7 +6,7 @@ class usersSerializer(serializers.ModelSerializer):
         fields = ('id',
                   'first_name',
                   'last_name',
-                  'company',
+                  'company_name',
                   'city',
                   'state',
                   'zip',

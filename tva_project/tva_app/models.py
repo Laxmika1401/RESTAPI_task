@@ -5,7 +5,7 @@ class tva_table(models.Model):
     id = models.IntegerField(primary_key=True)
     first_name = models.CharField(max_length=150)
     last_name = models.CharField(max_length=150)
-    company = models.CharField(max_length=500)
+    company_name = models.CharField(max_length=500)
     city = models.CharField(max_length=150)
     state = models.CharField(max_length=150)
     zip = models.IntegerField()

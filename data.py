@@ -14,7 +14,7 @@ for i,item in enumerate(json_obj):
     id = validate_string(item.get('id',None))
     first_name = validate_string(item.get('first_name',None))
     last_name = validate_string(item.get('last_name',None))
-    company = validate_string(item.get('company_name',None))
+    company_name = validate_string(item.get('company_name',None))
     city = validate_string(item.get('city',None))
     state = validate_string(item.get('state',None))
     zip = validate_string(item.get('zip',None))
@@ -22,6 +22,6 @@ for i,item in enumerate(json_obj):
     web = validate_string(item.get('web',None))
     age = validate_string(item.get('age',None))
     
-    mycur.execute("INSERT INTO tva_app_tva_table(id,first_name,last_name,company,city,state,zip,email,web,age) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(id,first_name,last_name,company,city,state,zip,email,web,age))
+    mycur.execute("INSERT INTO tva_app_tva_table(id,first_name,last_name,company_name,city,state,zip,email,web,age) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(id,first_name,last_name,company_name,city,state,zip,email,web,age))
 conn.commit()
 conn.close()
